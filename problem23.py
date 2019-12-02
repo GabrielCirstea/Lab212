@@ -1,19 +1,6 @@
 from problem import Problem
 #import random
-class Problem23(Problem):
 
-    def __init__(self):
-        import random
-        # data = [8, 5, 3, 9, 2, 1, 7, 6]
-        # n = len(data)
-        n = random.randint(8, 12)
-        data = random.sample(range(12), n)
-        statement = f'Problema 23:\n'
-        statement += f'Primiti vectorul: { str(data) }. \n'
-        statement += f'Faceti din acest vector un min-ansamblu folosind un numar\n'
-        statement += f'minim de operatii si demonstrati complexitatea. \n'
-        
-        super().__init__(statement, data)
 
     def shiftDown(self, H, n, index):
 
